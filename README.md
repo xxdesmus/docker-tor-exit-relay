@@ -5,7 +5,7 @@ Dockerfile to be use to build image for docker container with tor relay
 
 How to use :
 
-docker run -d -p 22 angelrr7702/tor-relay
+docker run -d -p 22 angelrr7702/docker-tor-relay
 
 check docker port and ssh it  (login:password ==>  root:rootprovisional) 
 
