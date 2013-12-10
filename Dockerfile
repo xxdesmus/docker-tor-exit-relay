@@ -13,5 +13,5 @@ ADD start.sh /start.sh
 RUN chmod 750 /start.sh
 RUN mkdir -p /var/log/supervisor
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-EXPOSE 22
+EXPOSE 22 9050 9001
 CMD ["/bin/bash", "-e", "/start.sh"] 
