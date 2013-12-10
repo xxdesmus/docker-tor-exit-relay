@@ -26,7 +26,9 @@ and
 
 https://www.torproject.org/docs/faq.html.en
 
-note : because you use it don't mean your complete anonymous ... please read about tor at www.torproject.org before using it ....  this suppose to work like relay (will use 50k/100k of your network for exit relay..) still no sure if exit relay working the way suppose to be ... if somebody can tested it that have more time working with tor .. will apresiated it ..
-maybe you need to add more port -p for it to work like relay under docker ...
+note : because you use it don't mean your complete anonymous ... please read about tor at www.torproject.org before using it ....  this suppose to work like relay (will use 50k/100k of your network for exit relay..) still no sure if exit relay working the way suppose to be ... if somebody can test it that have more time working with tor .. will apresiated it ..
+maybe you need to add more port -p 9050:9050 -p 9001:9001 -p  for it to work like relay under docker ...
+
+you can use like reference to create your own configuration and Dockerfile , file torrc is the tor conf file ..
 
 
