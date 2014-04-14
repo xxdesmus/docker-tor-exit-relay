@@ -26,7 +26,7 @@ and
 
 https://www.torproject.org/docs/faq.html.en
 
-note : because you use it don't mean your complete anonymous ... please read about tor at www.torproject.org before using it ....  this suppose to work like relay (will use 50k/100k of your network for exit relay..) still no sure if exit relay working the way suppose to be ... if somebody can test it that have more time working with tor .. will apresiated it ..
+note : because you use it don't mean your complete anonymous ... please read about tor at www.torproject.org before using it ....  this suppose to work like relay (will use 50k/100k of your network for exit relay..) 
 
 
 you can use like reference to create your own configuration and Dockerfile , file torrc is the tor conf file ..
