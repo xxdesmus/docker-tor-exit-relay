@@ -1,20 +1,17 @@
-docker-tor-relay
+docker-tor-exit-relay
 ================
 
 Dockerfile to be use to build image for docker container with tor relay
 
 How to use :
 
-docker run -d -p 22  -p 9050:9050 -p 9001:9001 angelrr7702/docker-tor-relay
+docker run -d -p 22 -p 9050:9050 -p 9001:9001 quantumobject/docker-tor-exit-relay
 
-check docker port and ssh it  (login:password ==>  root:rootprovisional) 
-
-passwd  ==> to change password 
+docker-bash container-id    ==> you can get  this application from quantumobject/tools
 
 them you can use it by usewithtor command
 
 usewithtor ssh destination   ==>  to use ssh anonymous  (read about limitation and security at www.torproject.org)
-
 
 you can create a new container everytime you need to use it and rm it when done with it ..
 
@@ -30,5 +27,3 @@ note : because you use it don't mean your complete anonymous ... please read abo
 
 
 you can use like reference to create your own configuration and Dockerfile , file torrc is the tor conf file ..
-
-
