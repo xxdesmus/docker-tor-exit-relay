@@ -10,8 +10,8 @@ else
         mkdir -p /root/.ssh
         ssh-keygen -t dsa -f /root/.ssh/id_dsa -N ""
         echo "IdentityFile ~/.ssh/id_dsa" >> /etc/ssh/ssh_config
-        cat /etc/id_dsa.pub >> /root/.ssh/authorized_keys
-        cat /etc/id_dsa
+        cat /root/.ssh/id_dsa.pub >> /root/.ssh/authorized_keys
+        cat /root/.ssh/id_dsa
         echo -e "Use this private key to connect to container by ssh"
         #needed for fix problem with ubuntu and cron
         update-locale 
