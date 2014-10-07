@@ -14,6 +14,7 @@ else
         cat /root/.ssh/id_dsa
         echo -e "Use this dsa private key to connect to container by ssh"
         echo -e "change permission to 0700 of private key file"
+        echo -e "\n\n"
         #needed for fix problem with ubuntu and cron
         update-locale 
         date > /etc/configured
