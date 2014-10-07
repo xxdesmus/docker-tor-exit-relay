@@ -31,6 +31,10 @@ RUN mkdir /etc/service/tor
 COPY tor.sh /etc/service/tor/run
 RUN chmod +x /etc/service/tor/run
 
+RUN mkdir /etc/service/sshd
+COPY sshd.sh /etc/service/sshd/run
+RUN chmod +x /etc/service/sshd/run
+
 #pre-config scritp for different service that need to be run when container image is create 
 #maybe include additional software that need to be installed ... with some service running ... like example mysqld
 COPY pre-conf.sh /sbin/pre-conf
