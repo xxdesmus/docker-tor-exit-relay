@@ -15,6 +15,7 @@ RUN gpg --keyserver keys.gnupg.net --recv 886DDD89 \
 RUN apt-get update && apt-get install -y -q tor \
                     openntpd \
                     deb.torproject.org-keyring \
+                    openssh-server \
                     && apt-get clean \
                     && rm -rf /tmp/* /var/tmp/*  \
                     && rm -rf /var/lib/apt/lists/*
