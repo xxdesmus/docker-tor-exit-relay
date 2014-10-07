@@ -7,15 +7,17 @@ How to use :
 
 docker run -d -p 22 -p 9050:9050 -p 9001:9001 quantumobject/docker-tor-exit-relay
 
+This container will generate dsa key for ssh the first time it is run ... need to add the private key to your  ~/.ssh/id_dsa to be able to ssh the container ...
+
 docker-bash container-id    ==> you can get  this application from quantumobject/tools
 
 them you can use it by usewithtor command
 
 usewithtor ssh destination   ==>  to use ssh anonymous  (read about limitation and security at www.torproject.org)
 
-you can create a new container everytime you need to use it and rm it when done with it ..
+you can create a new container everytime you need to use it and rm it when done with it ..(this bad idea if you want to keep an extable exit relay) 
 
-I added the  Reduced Exit Policy to the configuration to make sure to drastically reduces the odds that a bittorrent user will select your node and you reduce the risk of getting DMCA takedowns.
+I added the  Reduced Exit Policy to the configuration to make sure to drastically reduces the odds that a bittorrent user will select your node and it will reduce the risk of getting DMCA takedowns.
 
 
 More info check please :
