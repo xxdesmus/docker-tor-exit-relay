@@ -4,6 +4,7 @@
 set -e
 
 if [ -f /etc/configured ]; then
+        mkdir -p /root/.ssh
         ssh-keygen -t dsa -f /root/.ssh/id_dsa -N ""
         echo 'already configured'
 else
