@@ -15,6 +15,9 @@ usewithtor ssh destination   ==>  to use ssh anonymous  (read about limitation a
 
 you can create a new container everytime you need to use it and rm it when done with it ..
 
+I added the  Reduced Exit Policy to the configuration to make sure to drastically reduces the odds that a bittorrent user will select your node and you reduce the risk of getting DMCA takedowns.
+
+
 More info check please :
 
 https://www.torproject.org/docs/tor-relay-debian.html.en
