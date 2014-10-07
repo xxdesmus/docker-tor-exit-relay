@@ -54,6 +54,7 @@ VOLUME /var/backups
 #include conf file relate to service/daemon 
 #additionsl tools to be use internally 
 COPY torrc /etc/tor/torrc
+RUN mkdir -p /var/run/sshd
 
 # to allow access from outside of the container  to the container service
 # at that ports need to allow access from firewall if need to access it outside of the server. 
