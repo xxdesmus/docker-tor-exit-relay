@@ -1,10 +1,7 @@
 #name of container: docker-tor-exit-relay
-#versison of container: 0.5.1
+#versison of container: 0.5.2
 FROM quantumobject/docker-baseimage
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
-
-# Set correct environment variables.
-ENV HOME /root
 
 #add repository and update the container
 #Installation of nesesary package/software for this containers...
