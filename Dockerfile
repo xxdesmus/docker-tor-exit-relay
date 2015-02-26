@@ -6,7 +6,7 @@ MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 #add repository and update the container
 #Installation of nesesary package/software for this containers...
 RUN echo "deb http://archive.ubuntu.com/ubuntu utopic-backports main restricted " >> /etc/apt/sources.list
-RUN echo "deb http://deb.torproject.org/torproject.org trusty main" >> /etc/apt/sources.list
+RUN echo "deb http://deb.torproject.org/torproject.org utopic main" >> /etc/apt/sources.list
 RUN gpg --keyserver keys.gnupg.net --recv 886DDD89 \
           &&  gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | DEBIAN_FRONTEND=noninteractive apt-key add -
 RUN apt-get update && apt-get install -y -q tor \
