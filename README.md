@@ -39,7 +39,7 @@ You can create a new container everytime you need to use it and remove it when d
 
 I added the  Reduced Exit Policy to the configuration to make sure to drastically reduces the odds that a bittorrent user will select your node and it will reduce the risk of getting DMCA takedowns.
 
-Note: because you use it don't mean you are complete anonymous , please read about Tor at [www.torproject.org][1] before using it. This suppose to work like relay and it will use 50k/100k of your network bandwith. 
+Note: because you use it don't mean you are complete anonymous , please read about Tor at [www.torproject.org][1] before using it. This suppose to work like relay and it will use 50k/100k of your network bandwidth. 
 
 ## More Info
 
