@@ -1,5 +1,5 @@
 #name of container: docker-tor-exit-relay
-#versison of container: 0.5.2
+#versison of container: 0.5.3
 FROM quantumobject/docker-baseimage
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 
@@ -56,9 +56,6 @@ RUN mkdir -p /var/run/sshd
 # to allow access from outside of the container  to the container service
 # at that ports need to allow access from firewall if need to access it outside of the server. 
 EXPOSE 22 9050 9001
-
-#creatian of volume 
-#VOLUME 
 
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
