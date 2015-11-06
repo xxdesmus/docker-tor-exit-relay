@@ -8,7 +8,7 @@ Docker container for [Tor Exit Relay][3]
 
   - [Docker][2]
 
-To install docker in Ubuntu 14.04 use the commands:
+To install docker in Ubuntu 15.04 use the commands:
 
     $ sudo apt-get update
     $ wget -qO- https://get.docker.com/ | sh
@@ -51,6 +51,8 @@ To help improve this container [docker-tor-exit-relay][5]
 
 [Tor Exit Guidelines][7]
 
+For additional info about us and our projects check our site [www.quantumobject.com][8]
+
 [1]:https://www.torproject.org
 [2]:https://www.docker.com
 [3]:https://www.torproject.org/docs/tor-relay-debian.html.en
@@ -58,3 +60,4 @@ To help improve this container [docker-tor-exit-relay][5]
 [5]:https://github.com/QuantumObject/docker-tor-exit-relay
 [6]:https://www.torproject.org/docs/faq.html.en
 [7]:https://trac.torproject.org/projects/tor/wiki//doc/TorExitGuidelines
+[8]:http://www.quantumobject.com/
