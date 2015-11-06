@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y -q tor \
                     openntpd \
                     deb.torproject.org-keyring \
                     openssh-server \
+                    lynx \
                     && apt-get clean \
                     && rm -rf /tmp/* /var/tmp/*  \
                     && rm -rf /var/lib/apt/lists/*
