@@ -30,13 +30,13 @@ To access it and configured and used the container :
     $ docker exec -it container-id /bin/bash
     $ export TERM=xterm       #needed to execute some command correctly (nano,top)
 
-Them you can use it by usewithtor command
+Them you can use it by torify command
 
-    $ usewithtor ssh destination
+    $ torify ssh destination
     
 To check if tor working correctly :
 
-    $ usewithtor lynx https://check.torproject.org/
+    $ torify lynx https://check.torproject.org/
   
 To use ssh anonymous please read about limitation and security at [www.torproject.org][1]
 
@@ -44,7 +44,7 @@ You can create a new container everytime you need to use it and remove it when d
 
 I added the  Reduced Exit Policy to the configuration to make sure to drastically reduces the odds that a bittorrent user will select your node and it will reduce the risk of getting DMCA takedowns.
 
-Note: because you use it don't mean you are complete anonymous , please read about Tor at [www.torproject.org][1] before using it. This suppose to work like relay and it will use 50k/100k of your network bandwidth. 
+Note: because you use it don't mean you are complete anonymous , please read about Tor at [www.torproject.org][1] before using it. This suppose to work like relay and it will use 80k/100k of your network bandwidth. 
 
 ## More Info
 
