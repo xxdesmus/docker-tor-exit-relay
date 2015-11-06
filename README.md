@@ -28,10 +28,15 @@ This container will generate dsa key for ssh the first time it is run , you need
 To access it and configured and used the container :
 
     $ docker exec -it container-id /bin/bash
+    $ export TERM=xterm       #needed to execute some command correctly (nano,top)
 
 Them you can use it by usewithtor command
 
     $ usewithtor ssh destination
+    
+To check if tor working correctly :
+
+    $ usewithtor lynx https://check.torproject.org/
   
 To use ssh anonymous please read about limitation and security at [www.torproject.org][1]
 
